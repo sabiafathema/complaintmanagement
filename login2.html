@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loginpage</title
+	<meta charset="utf-8">
+	<title>Login</title>
+	
+</head>
+<body>
+	<button onclick="location.href='rhome.html';">Back</button>
+	<button onclick="func1();">User</button>
+	<button onclick="func2();">Admin</button>
+	<div id="admin">
+		<h2>Admin login</h2>
+		<form name="f1" method="POST" action="login.jsp">
+			<input class="text" type="text" name="first" placeholder="Username" required>
+			<input class="pass" type="password" name="last" placeholder="Password" required>
+			<input type="submit" value="login">
+		</form>
+	</div>
+	<div id="user">
+		<h2>User login</h2>
+		<form name="f2" method="POST" action="userlogin.jsp">
+			<input class="text" type="text" name="rid" placeholder="Username" required>
+			<input class="pass" type="password" name="last1" placeholder="Password" required>
+			<input type="submit" value="login">
+		</form>
+	</div>
+	<script type="text/javascript">
+		function func1(){
+			document.getElementById("user").style.zIndex=1;
+			document.getElementById("admin").style.zIndex=0;
+		}
+		function func2(){
+			document.getElementById("user").style.zIndex=0;
+			document.getElementById("admin").style.zIndex=1;
+		}
+	</script>
+
+	<style>
+		body{
+	align-items: center;
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	background: url(images/lg2.jpeg) no-repeat;
+	background-size: cover;
+}
+div{
+	margin: 200px 600px;
+	width: 350px;
+	height: 300px;
+	text-align: center;
+	position: absolute;
+	background-color: rgb(21, 22, 21);
+}
+h2{
+	color: white;
+	padding: 5px;
+	font-weight: 500;
+	font-size: 30px;
+	border-bottom: 1px solid ghostwhite;
+}
+input{
+	font-size: 15px;
+	outline: none;
+	border: 1.5px solid rgb(17, 17, 17);
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	color: white;
+	background-color: rgb(26, 34, 102);
+	position: relative;
+	width: 250px;
+	border-radius: 20px;
+	height: 40px;
+	transition: .2s;
+}
+input:focus{
+	width: 280px;
+	border: 2px solid rgb(243, 247, 243);
+}
+input[type="submit"]{
+	width: 120px;
+	height: 30px;
+	border: 2px solid rgb(240, 245, 240);
+}
+input[type="submit"]:hover{
+	width: 160px;
+	background-color: rgb(10, 10, 10);
+	cursor: pointer;
+}
+#user{
+	z-index: 1;
+}
+#admin{
+	z-index: 0;
+}
+button{
+	text-align: center;
+	margin: 10px;
+	padding: 5px;
+	width: 80px;
+	height: 30px;
+	background-color: transparent;
+	outline: none;
+	border-radius: 10px;
+	border: 1.5px solid white;
+	font-size: 13px;
+	color: white;
+	cursor: pointer;
+	transition: .2s;
+}
+button:hover{
+	width: 90px;
+	background-color: white;
+	color: black;
+	font-size: 16px;
+}
+	</style>
+</body>
+</html>

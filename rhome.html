@@ -1,0 +1,196 @@
+<html>
+<body>    
+<header>
+    <h2><p style="color:rgb(12, 11, 11);">Welcome To Home Page</p></h2>
+    
+    <div class="wrapper">
+        <div class="logo">
+        </div>
+        <ul class="nav-area">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about" data-after="About">About</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+            <li><a href="login2.html">Login</a></li>
+        </ul>
+    </div>
+    <section id="about">
+        <div class="about container">
+          
+          <div class="col-right">
+            <h1 class="section-title">About <span>me</span></h1>
+            <h2>Web Application Developer</h2>
+            <p>Today we are going create a website which will be a nice one page website. This is for html & css practice and through this project we will see many things like how we can make our website fully responsive, so many thing about pseudo elements, hamburger, Off-canvas menu and many more. Hope you will like this video. Also You can download the source code from the link down below.</p>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+    
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="contact container">
+          <div>
+            <h1 class="section-title">Contact <span>info</span></h1>
+          </div>
+          <div class="contact-items">
+            <div class="contact-item">
+              
+              <div class="contact-info">
+                <h1>Phone</h1>
+                <h2>+91 9440804578</h2>
+                <h2>+91 7013837430</h2>
+              </div>
+            </div>
+            <div class="contact-item">
+              
+              <div class="contact-info">
+                <h1>Email</h1>
+                <h2>info@gmail.com</h2>
+                <h2>abcd@gmail.com</h2>
+              </div>
+            </div>
+            <div class="contact-item">
+              
+              <div class="contact-info">
+                <h1>Address</h1>
+                <h2>Bhimavaram,AP</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin:0;
+    padding:0;
+    background: url(images/home.jpg) no-repeat;
+    background-size:cover;
+}
+.wrapper{
+    width:1170px;
+    margin:auto;
+}
+header{
+    
+    -webkit-animation-size: cover;
+    background-size:cover;
+    background-position: center center;
+    position: relative;
+}
+.nav-area{
+    position:fixed;
+    right:10%;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-area li {
+    display: inline-block;
+    font-size: 20px;
+}
+.nav-area li a{
+    color: rgb(241, 231, 231);
+    text-decoration: none;
+    padding:5px 20px;
+    font-family: poppins;
+    font-size: 20px;
+}
+.nav-area li a:hover{
+    background: rgb(248, 245, 245);
+    color: rgb(241, 115, 11);
+    font-size: 20px;
+}
+.logo img{
+    width: 100px;
+    float: left;
+    height: auto;
+
+}
+
+p{
+    display: inline-flex;
+    background-color: transparent;
+    margin: 20px;
+    padding: 20px;
+    width: 500px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    font-family: sans-serif;
+    visibility:inherit;
+}
+*/
+h2{
+    color: white;
+}
+/* About Section */
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+
+#about .col-right {
+	width: 100%;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p {
+	margin-bottom: 70px;
+}
+/* End About Section */
+
+/* contact Section */
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+}
+#contact .contact-items {
+	/* max-width: 400px; */
+	width: 100%;
+}
+#contact .contact-item {
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display:-webkit-flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 18px 0 #0000002c;
+	transition: 0.3s ease box-shadow;
+}
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 5px 0 #ee0ac82c;
+}
+#contact .contact-info h1 {
+	font-size: 2.5rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+}
+/*End contact Section */
+</style>
+
+
+</body>
+</html>
+
